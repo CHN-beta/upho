@@ -34,6 +34,7 @@ class PhonopyUnfolding(Phonopy):
                  is_symmetry=True,
                  use_lapack_solver=False,
                  log_level=0):
+        super().__init__(unitcell=unitcell)
         self._symprec = symprec
         self._distance = distance
         self._factor = factor
