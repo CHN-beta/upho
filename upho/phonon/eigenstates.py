@@ -146,8 +146,8 @@ class Eigenstates:
         for k in weights_keys:
             weights_arms[k] = np.array(weights_arms[k]) / len(q_star)
 
-        for k in weights_keys:
-            print("Sum of weights_arms {:5s} :".format(k), np.nansum(weights_arms[k]))
+        # for k in weights_keys:
+            # print("Sum of weights_arms {:5s} :".format(k), np.nansum(weights_arms[k]))
 
         self._q_star = q_star
         self._point = q
