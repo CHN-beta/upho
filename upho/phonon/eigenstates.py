@@ -408,6 +408,7 @@ class Eigenstates:
         }
 
         for k, v in data_dict.items():
+            print("writing: ", group + k)
             hdf5_file.create_dataset(group + k, data=np.array(v))
 
 def calculate_frequencies(eigenvalues, factor):
